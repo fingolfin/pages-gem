@@ -259,6 +259,12 @@ RSpec.describe "Pages Gem Integration spec" do
         expect(contents).to match('aria-label="hi"')
       end
     end
+
+    context "jekyll-last-modified-at" do
+      it "renderse last-modified-at" do
+        expect(contents).to match('20th century')
+      end
+    end
   end
 
   context "fixture site with remote theme config" do
